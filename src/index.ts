@@ -70,9 +70,6 @@ app.patch("/todos/:id", async (c) => {
   return c.json(todo);
 });
 
-/**
- * 🚀 START SERVER (THIS WAS MISSING)
- */
 serve(
   {
     fetch: app.fetch,
