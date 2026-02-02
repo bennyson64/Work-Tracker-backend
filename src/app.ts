@@ -1,4 +1,3 @@
-// src/app.ts
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 
@@ -22,8 +21,7 @@ app.use(
   })
 );
 
-/* Health */
-app.get("/", (c) => c.text("Hono Todo API running 🚀"));
+app.get("/", (c) => c.text("Hono Todo API running"));
 
 /* GET todos */
 app.get("/todos", (c) => c.json(TODOS));

@@ -1,5 +1,9 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
+export const config = {
+  runtime: "nodejs",
+};
+
 /**
  * Fake in-memory DB
  * (replaces frontend api/todo.ts)
