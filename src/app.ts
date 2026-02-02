@@ -31,7 +31,7 @@ app.post("/todos", async (c) => {
   const body = (await c.req.json()) as { title: string };
 
   const newTodo: Todo = {
-    id: crypto.randomUUID(),
+    id: Math.random().toString(36).slice(2),
     title: body.title,
     status: "todo",
   };
